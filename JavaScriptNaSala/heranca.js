@@ -25,13 +25,11 @@ Cachorro.prototype = new Animal();
 function Manada(){
 	this.manadas =[];
 }
-
 Manada.prototype = {
 	adicionar: function(animal){
 		this.manadas.push(animal);
 	}
 };
-
 function ManadaSustenido(){
 	Manada.call(this);
 }
